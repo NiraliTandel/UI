@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'icon';
+  src:  url('fonts/icon.eot?9etlib');
+  src:  url('fonts/icon.eot?9etlib#iefix') format('embedded-opentype'),
+    url('fonts/icon.ttf?9etlib') format('truetype'),
+    url('fonts/icon.woff?9etlib') format('woff'),
+    url('fonts/icon.svg?9etlib#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-show-chart_icon:before {
+  content: "\e90e";
+  color: #784fa0;
+}
+.icon-person_icon:before {
+  content: "\e90b";
+}
+.icon-bag_icon:before {
+  content: "\e90c";
+}
+.icon-view_icon:before {
+  content: "\e90d";
+}
+.icon-bell_icon:before {
+  content: "\e902";
+}
+.icon-logout_icon:before {
+  content: "\e905";
+}
+.icon-square_icon:before {
+  content: "\e900";
+}
+.icon-arrow_icon:before {
+  content: "\e901";
+}
+.icon-chat_icon:before {
+  content: "\e903";
+}
+.icon-search_icon:before {
+  content: "\e904";
+}
+.icon-warning_icon:before {
+  content: "\e906";
+}
+.icon-setting_icon:before {
+  content: "\e907";
+}
+.icon-file_icon:before {
+  content: "\e908";
+}
+.icon-cart_icon:before {
+  content: "\e909";
+}
+.icon-menu_icon:before {
+  content: "\e90a";
+}

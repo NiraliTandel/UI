@@ -1,0 +1,13 @@
+// Card styles goes here
+.card-container {
+  margin: 0 -20px 30px;
+}
+
+.card {
+  padding-left : 20px;
+  width: 25%;
+}
+
+.inner-card {
+  background-color: $card-bg;
+}

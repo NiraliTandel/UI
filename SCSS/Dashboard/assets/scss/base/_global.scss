@@ -1,0 +1,56 @@
+// Global styles goes here
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  color: $text-color;
+}
+
+// flex styles
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+@each $percent in (25, 50, 75, 100) {
+  .h-#{$percent} {
+    height: 1% * $percent;
+  }
+  .w-#{$percent} {
+    width: 1% * $percent;
+  }
+}
