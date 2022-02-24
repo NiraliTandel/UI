@@ -1,1 +1,12 @@
 // Button styles goes here
+// Search Button 
+
+button{
+    width: $search-btn-width;
+    height: $search-btn-height;
+    background-color: $icon-button-color;
+    color: $white;
+    border: none;
+    left: 99%;
+    cursor: pointer; 
+}

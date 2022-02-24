@@ -1,13 +1,140 @@
 // Card styles goes here
 .card-container {
-  margin: 0 -20px 30px;
+  margin: 0 40px 30px 40px;
+
+  .card {
+    width: 25%;
+    &:hover {
+      &:first-child {
+        .inner-card {
+          background-color: $view-card-hover-bg;
+          .view-icon-box {
+            background-color: $card-hover-color;
+          }
+        }
+      }
+      &:nth-child(2) {
+        .inner-card {
+          background-color: $bag-card-hover-bg;
+          .bag-icon-box {
+            background-color: $card-hover-color;
+          }
+        }
+      }
+      &:nth-child(3) {
+        .inner-card {
+          background-color: $user-card-hover-bg;
+          .user-icon-box {
+            background-color: $card-hover-color;
+          }
+        }
+      }
+      &:last-child {
+        .inner-card {
+          background-color: $cart-card-hover-bg;
+          .cart-icon-box {
+            background-color: #ffffff4a;
+          }
+        }
+      }
+      .inner-card {
+        .card-text,
+        .card-number,
+        .view-icon,
+        .bag-icon,
+        .user-icon,
+        .cart-icon,
+        .graph-down,
+        .graph-up,
+        .link-color {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .inner-card {
+    background-color: $card-bg;
+    padding: 20px;
+
+    .view-icon-box {
+      height: $card-box-height;
+      width: $card-box-width;
+      background-color: $view-card-box-color;
+    }
+
+    .view-icon {
+      font-size: $card-icon-size;
+      color: $view-card-icon-color;
+    }
+
+    .bag-icon-box {
+      height: $card-box-height;
+      width: $card-box-width;
+      background-color: $bag-card-box-color;
+    }
+
+    .bag-icon {
+      font-size: $card-icon-size;
+      color: $bag-card-icon-color;
+    }
+
+    .user-icon-box {
+      height: $card-box-height;
+      width: $card-box-width;
+      background-color: $user-card-box-color;
+    }
+
+    .user-icon {
+      font-size: $card-icon-size;
+      color: $user-card-icon-color;
+    }
+
+    .cart-icon-box {
+      height: $card-box-height;
+      width: $card-box-width;
+      background-color: $cart-card-box-color;
+    }
+
+    .cart-icon {
+      font-size: $card-icon-size;
+      color: $cart-card-icon-color;
+    }
+
+    .graph-up {
+      font-size: $card-graph-size;
+      color: $card-graph-up-color;
+    }
+
+    .graph-down {
+      font-size: $card-graph-size;
+      color: $card-graph-down-color;
+    }
+
+    .card-number {
+      font-size: 30px;
+      font-weight: $font-weight;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .card-text {
+      font-size: 16px;
+      color: $text-muted-color;
+      padding-top: 20px;
+    }
+
+    .link-color {
+      color: $bag-card-text-link-color;
+    }
+  }
 }
 
-.card {
-  padding-left : 20px;
-  width: 25%;
+.padding-top-10 {
+  padding-top: 10px;
 }
 
-.inner-card {
-  background-color: $card-bg;
+.margin-left-25 {
+  margin-left: 25px;
 }

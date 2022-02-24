@@ -26,7 +26,7 @@
 
 .icon-show-chart_icon:before {
   content: "\e90e";
-  color: #784fa0;
+  /* color: #784fa0; */
 }
 .icon-person_icon:before {
   content: "\e90b";

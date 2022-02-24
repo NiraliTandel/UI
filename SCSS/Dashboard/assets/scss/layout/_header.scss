@@ -1,5 +1,39 @@
 // Header area style
-#header {
-    background-color: $header-bg;
-    height: $header-height;
+.header {
+  background-color: $header-bg;
+  height: $header-height;
+  border-bottom: 1px solid $border-bottom-color;
+  flex-shrink: 0;
+
+  .header-icon {
+    font-size: $header-icon-size;
+    color: $primary;
+    padding: 36px;
+  }
+
+  .search {
+    background-color: $search-bar-color;
+    align-items: center;
+    margin-left: 40px;
+
+    .search-icon {
+      font-size: $search-icon-size;
+      padding-left: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .icon {
+    font-size: $header-icon-size;
+    color: $icon-color;
+    padding-right: 30px;
+  }
+
+  .image {
+    height: 50px;
+    width: 50px;
+    flex-shrink: 0;
+    border-radius: $rounded-circle;
+    margin-right: 60px;
+  }
 }

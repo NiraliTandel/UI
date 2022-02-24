@@ -1,38 +1,37 @@
 // All the SCSS Variables goes here
 // Fonts
-$font-size-base: 1rem;
 $font-family: 'Josefin Sans', sans-serif;
-$font-bold: 500;
+$font-weight: 500;
 
-// common
+// Common
 $transition-timing: 0.4s;
 
 // Border-radius
 $border-radius: 12px;
 $rounded-circle: 50%;
 
-// Sidebar
-$sidebar-width: 90px;
-$sidebar-icon-size: 14px;
-$nav-item-padding-x: 1rem;
-$nav-item-padding-y: 1rem;
-$nav-item-margin-bottom: 2rem;
-
 // Header
 $header-height: 90px;
-$header-nav-padding-x: 1.5rem;
-$header-nav-padding-y: 1.8rem;
-$header-nav-margin-bottom: 1rem;
-$header-icon-size: 14px;
+$header-icon-size: 24px;
+
+// Search
+$search-icon-size: 16px;
+$search-box-width: 500px;
+$search-box-height: 40px;
+$search-btn-width: 70px;
+$search-btn-height: 40px;
+
+// Sidebar
+$sidebar-width: 90px;
+$sidebar-icon-size: 24px;
 
 // Card
-$card-border-radius: $border-radius;
-$card-text-font-size: 2.2rem;
-$card-text-font-size-sm: 0.825rem;
-$card-icon-font-size: 1.8rem;
-$card-padding-x: 1.5rem;
-$card-padding-y: 1.5rem;
-$card-gap: 2rem;
+$card-box-height: 50px;
+$card-box-width: 50px;
+$card-icon-size: 24px;
+$card-graph-size: 40px;
+$card-text-font-size-big: 30px;
+$card-text-font-size-small: 16px;
 
 // Table
-$table-cell-padding: 1.4rem;
+$table-heading-size: 20px;

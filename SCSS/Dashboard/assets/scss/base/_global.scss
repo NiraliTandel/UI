@@ -15,6 +15,15 @@ body {
 
 body {
   color: $text-color;
+  font-family: $font-family;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
 }
 
 // flex styles
@@ -40,6 +49,9 @@ body {
 
 .justify-content-end {
   justify-content: flex-end;
+}
+.justify-content-center{
+  justify-content: center;
 }
 
 .justify-content-between {

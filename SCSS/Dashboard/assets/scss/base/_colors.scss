@@ -7,54 +7,60 @@ $body-bg: #f8f8f8;
 
 // Fonts
 $text-color: #160e4d;
-$text-muted: #abb1bf;
+$text-muted-color: #abb1bf;
+
+// Icon
+$icon-color: #abb1bf;
+$icon-hover-color: $primary;
 
 // Header
-$header-bg: #ffffff;
-$icon-button-color: #438ffe;
+$header-bg: $white;
+$icon-button-color: $primary;
 $search-bar-color: #f8f8f8;
+$border-bottom-color: #e2e2e2;
 
 // Sidebar
-$sidebar-bg: #ffffff;
-$nav-icon-color: $text-muted;
+$sidebar-bg: $white;
+$nav-icon-color: $icon-color;
 $nav-active-color: #438ffe;
 
 // Card
-$card-bg: #ffffff;
-$card-hover-text-color: #ffffff;
-$card-big-text-color: $text;
-$card-small-text-color: $text-muted;
+$card-bg: $white;
+$card-hover-text-color: $white;
+$card-big-text-color: $text-color;
+$card-small-text-color: $text-muted-color;
+$card-hover-color: #ffffff4a;
+$card-graph-up-color: #8dc48b;
+$card-graph-down-color: #fe7c52;
 
-// Card1
-$card1-hover-bg: $primary;
-$card1-icon-color: $primary;
-$crad1-graph-color: #8dc48b;
+// View Card
+$view-card-hover-bg: $primary;
+$view-card-icon-color: $primary;
+$view-card-box-color: #edf4ff;
 
-// Card2
-$card2-hover-bg: #8dc48b;
-$card2-icon-color: #8dc48b;
-$crad2-graph-color: #fe7c52;
-$card2-text-link-color: $primary;
+// Bag Card
+$bag-card-hover-bg: #8dc48b;
+$bag-card-icon-color: #8dc48b;
+$bag-card-text-link-color: $primary;
+$bag-card-box-color: #f4f9f4;
 
-// Card3
-$card3-hover-bg: $primary;
-$card3-icon-color: $primary;
-$crad3-graph-color: #8dc48b;
+// User Card
+$user-card-hover-bg: $primary;
+$user-card-icon-color: $primary;
+$user-card-box-color: #edf4ff;
 
-// Card4
-$card4-hover-bg: #83bcbd;
-$card4-icon-color: #83bcbd;
-$crad4-graph-color: #8dc48b;
+// Cart Card
+$cart-card-hover-bg: #83bcbd;
+$cart-card-icon-color: #83bcbd;
+$cart-card-box-color: #f3f9f9;
 
 // Table
-$table-bg: #ffffff;
+$table-bg: $white;
 $table-cell-color: #f8f8f8;
-$table-text-color: $text;
+$table-text-color: $text-color;
 $table-status-color: $primary;
 
 // Graph
-$graph-bg: #ffffff;
-$graph-bottom-color: #fe7c52;
-$graph-top-color: #83bcbd;
-$graph-big-text-color: $text;
-$graph-small-text-color: $text-muted;
+$graph-bg: $white;
+$graph-big-text-color: $text-color;
+$graph-small-text-color: $text-muted-color;

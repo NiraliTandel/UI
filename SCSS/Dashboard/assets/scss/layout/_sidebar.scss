@@ -1,5 +1,31 @@
 // Sidebar area style
-#sidebar {
-    background-color: $sidebar-bg;
-    width: $sidebar-width;
+.sidebar {
+  background-color: $sidebar-bg;
+  width: $sidebar-width;
+
+  nav ul {
+    list-style-type: none;
+  }
+
+  .menu-icon {
+    font-size: $sidebar-icon-size;
+    color: $primary;
+  }
+
+  .icon {
+    font-size: $sidebar-icon-size;
+    color: $icon-color;
+  }
+}
+
+.padding-top-40 {
+  padding-top: 40px;
+}
+
+.padding-top-60 {
+  padding-top: 60px;
+}
+
+.padding-bottom-90 {
+  padding-bottom: 90px;
 }

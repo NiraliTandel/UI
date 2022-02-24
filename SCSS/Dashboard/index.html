@@ -11,58 +11,61 @@
   <body>
     <div class="d-flex flex-column h-100">
       <!--Start: Header-->
-      <header
-        id="header"
-        class="d-flex justify-content-between align-items-center"
-      >
+      <header class="header d-flex justify-content-between align-items-center">
         <div class="d-flex">
           <a href="#">
-            <span class="icon-square_icon"></span>
+            <span
+              class="icon-square_icon header-icon justify-content-center align-items-center"
+            ></span>
           </a>
-          <div>
-            <a href="#"><span class="icon-search_icon"></span></a>
+          <div class="search d-flex position-relative">
+            <label for="searchInput"
+              ><span class="icon-search_icon search-icon"></span
+            ></label>
             <span>
               <input
                 type="search"
                 name="search"
-                id="search"
+                id="searchInput"
                 placeholder="Search for transaction, item, etc"
               />
             </span>
-            <button type="button">Search</button>
+            <button type="button" class="">Search</button>
           </div>
         </div>
-        <div>
-          <a href="#"><span class="icon-chat_icon"></span></a>
-          <a href="#"><span class="icon-bell_icon"></span></a>
-          <figure></figure>
+        <div class="d-flex justify-content-center align-items-center">
+          <a href="#"><span class="icon-chat_icon icon"></span></a>
+          <a href="#"><span class="icon-bell_icon icon"></span></a>
+          <figure><img src="assets/images/female.png" class="image" /></figure>
         </div>
       </header>
       <!--End: Header-->
       <!--Start: Section-->
-      <section class="container d-flex flex-grow-1">
+      <section class="d-flex flex-grow-1">
         <!--Start: Aside-->
-        <aside id="sidebar" class="d-flex flex-column justify-content-between">
+        <aside
+          class="sidebar d-flex flex-column justify-content-between justify-content-center align-items-center"
+        >
           <nav>
             <ul>
-              <li>
-                <a href="#">
-                  <span class="icon-menu_icon"></span>
+              <li class="padding-top-40">
+                <a href="#" class="nav-link">
+                  <span class="icon-menu_icon menu-icon"></span>
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <span class="icon-cart_icon"></span>
+              <li class="padding-top-60">
+                <a href="#" class="nav-link">
+                  <span class="icon-cart_icon icon"></span>
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <span class="icon-file_icon"></span>
+              <li class="padding-top-60">
+                <a href="#" class="nav-link">
+                  <span class="icon-file_icon icon"></span>
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <span class="icon-setting_icon"></span>
+              <li class="padding-top-60">
+                <a href="#" class="nav-link">
+                  <span class="icon-setting_icon icon"></span>
                 </a>
               </li>
             </ul>
@@ -70,13 +73,13 @@
           <nav>
             <ul>
               <li>
-                <a href="#">
-                  <span class="icon-warning_icon"></span>
+                <a href="#" class="nav-link">
+                  <span class="icon-warning_icon icon"></span>
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  <span class="icon-logout_icon"></span>
+              <li class="padding-top-60 padding-bottom-90">
+                <a href="#" class="nav-link">
+                  <span class="icon-logout_icon icon"></span>
                 </a>
               </li>
             </ul>
@@ -84,53 +87,71 @@
         </aside>
         <!--End: Aside-->
         <!--Start: Main-->
-        <main class="flex-grow-1">
-          <div>
+        <main class="dashboard-container flex-grow-1">
+          <div class="heading">
             <h1>Dashboard</h1>
           </div>
           <div class="d-flex justify-content-between card-container">
             <div class="card">
               <div class="inner-card">
-                <div>
-                  <span class="icon-view_icon"></span>
-                  <span class="icon-show-chart_icon"></span>
+                <div class="d-flex justify-content-between">
+                  <div
+                    class="view-icon-box d-flex justify-content-center align-items-center"
+                  >
+                    <span class="icon-view_icon view-icon"></span>
+                  </div>
+                  <span class="icon-show-chart_icon graph-up"></span>
                 </div>
-                <div>Total Views</div>
-                <div>308.402</div>
-                <div>Start from 1 Jan 2021</div>
+                <div class="card-text">Total Views</div>
+                <div class="card-number">308.402</div>
+                <div class="card-text">Start from 1 Jan 2021</div>
               </div>
             </div>
-            <div class="card">
+            <div class="card margin-left-25">
               <div class="inner-card">
-                <div>
-                  <span class="icon-bag_icon"></span>
-                  <span class="icon-show-chart_icon"></span>
+                <div class="d-flex justify-content-between">
+                  <div
+                    class="bag-icon-box d-flex justify-content-center align-items-center"
+                  >
+                    <span class="icon-bag_icon bag-icon"></span>
+                  </div>
+                  <span class="icon-show-chart_icon graph-down"></span>
                 </div>
-                <div>Total Products</div>
-                <div>10.820</div>
-                <div><a href="#">+ Add New Product</a></div>
+                <div class="card-text">Total Products</div>
+                <div class="card-number">10.820</div>
+                <div class="card-text">
+                  <a href="#" class="link-color">+ Add New Product</a>
+                </div>
               </div>
             </div>
-            <div class="card">
+            <div class="card margin-left-25">
               <div class="inner-card">
-                <div>
-                  <span class="icon-person_icon"></span>
-                  <span class="icon-show-chart_icon"></span>
+                <div class="d-flex justify-content-between">
+                  <div
+                    class="user-icon-box d-flex justify-content-center align-items-center"
+                  >
+                    <span class="icon-person_icon user-icon"></span>
+                  </div>
+                  <span class="icon-show-chart_icon graph-up"></span>
                 </div>
-                <div>Total Users</div>
-                <div>8.425</div>
-                <div>New user noted every week</div>
+                <div class="card-text">Total Users</div>
+                <div class="card-number">8.425</div>
+                <div class="card-text">New user noted every week</div>
               </div>
             </div>
-            <div class="card">
+            <div class="card margin-left-25">
               <div class="inner-card">
-                <div>
-                  <span class="icon-cart_icon"></span>
-                  <span class="icon-show-chart_icon"></span>
+                <div class="d-flex justify-content-between">
+                  <div
+                    class="cart-icon-box d-flex justify-content-center align-items-center"
+                  >
+                    <span class="icon-cart_icon cart-icon"></span>
+                  </div>
+                  <span class="icon-show-chart_icon graph-up"></span>
                 </div>
-                <div>Total Sells</div>
-                <div>1.028.623</div>
-                <div>Start from 1 Jan 2021</div>
+                <div class="card-text">Total Sells</div>
+                <div class="card-number">1.028.623</div>
+                <div class="card-text">Start from 1 Jan 2021</div>
               </div>
             </div>
           </div>
@@ -139,49 +160,58 @@
               <table class="h-100">
                 <thead>
                   <th>No</th>
+                  <th></th>
                   <th>Product Name</th>
                   <th>Status</th>
                   <th>Sold</th>
                   <th>View</th>
                 </thead>
-                <tbody>
+                <tbody class="table-cell-color">
                   <tr>
                     <td>1</td>
                     <td>
-                      <figure></figure>
-                      Mobile App UI KIT F...
+                      <figure>
+                        <img src="assets/images/web-design.jpg" class="image" />
+                      </figure>
                     </td>
-                    <td>Active</td>
+                    <td>Mobile App UI KIT F...</td>
+                    <td class="table-status-color">Active</td>
                     <td>10</td>
                     <td>320</td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>
-                      <figure></figure>
-                      40+ Landing Page Temp...
+                      <figure>
+                        <img src="assets/images/web-design.jpg" class="image" />
+                      </figure>
                     </td>
-                    <td>Active</td>
+                    <td>40+ Landing Page Temp...</td>
+                    <td class="table-status-color">Active</td>
                     <td>10</td>
                     <td>320</td>
                   </tr>
                   <tr>
                     <td>3</td>
                     <td>
-                      <figure></figure>
-                      Doctor Consultant UI KIT ...
+                      <figure>
+                        <img src="assets/images/web-design.jpg" class="image" />
+                      </figure>
                     </td>
-                    <td>Active</td>
+                    <td>Doctor Consultant UI KIT ...</td>
+                    <td class="table-status-color">Active</td>
                     <td>10</td>
                     <td>320</td>
                   </tr>
                   <tr>
                     <td>4</td>
                     <td>
-                      <figure></figure>
-                      Startup Illustration KIT Ve...
+                      <figure>
+                        <img src="assets/images/web-design.jpg" class="image" />
+                      </figure>
                     </td>
-                    <td>Active</td>
+                    <td>Startup Illustration KIT Ve...</td>
+                    <td class="table-status-color">Active</td>
                     <td>10</td>
                     <td>320</td>
                   </tr>

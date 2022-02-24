@@ -1,4 +1,9 @@
 // Main area style
-.container {
-    background-color: #f8f8f8;
+.dashboard-container {
+  background-color: #f8f8f8;
+
+  .heading {
+    font-size: 24px;
+    margin: 40px;
+  }
 }
