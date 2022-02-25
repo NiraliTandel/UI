@@ -1,38 +1,83 @@
-.table-container {
-  background-color: $table-bg;
-  margin-left: 40px;
-  padding: 20px;
+.table-wrapper {
+  margin: 30px -15px;
 
-  table {
-    border-collapse: collapse;
-    text-align: left;
-    width: 100%;
+  .table-container {
+    background-color: $table-bg;
+    margin: 0 15px;
+    padding: 20px;
+    height: 400px;
+    width: 65%;
 
-    th {
-      padding-bottom: 20px;
-      padding-left: 10px;
-      font-size: 20px;
+    table {
+      border-collapse: separate;
+      text-align: left;
+      border-spacing: 0 20px;
+      width: 100%;
+
+      th {
+        font-size: $table-heading-size;
+        background-color: $table-head-bg;
+      }
+
+      td {
+        padding: 10px;
+        font-size: $table-text-size;
+        font-weight: $font-weight-bold;
+      }
+
+      thead {
+        margin-left: 10px;
+        margin-right: 20px;
+      }
+
+      .prod-no {
+        width: 5%;
+      }
+
+      .prod-img {
+        width: 15%;
+      }
+
+      .prod-name {
+        width: 45%;
+      }
+
+      .prod-status {
+        width: 15%;
+      }
+
+      .prod-sold {
+        width: 10%;
+      }
+
+      .prod-view {
+        width: 10%;
+      }
     }
 
-    td {
-      border-bottom: 10px solid $white;
-      padding: 10px;
-      font-size: 16px;
-      font-weight: $font-weight;
+    .table-cell-color {
+      background-color: $table-cell-color;
+    }
+
+    .table-status-color {
+      color: $table-status-color;
+    }
+
+    .image {
+      height: 50px;
+      width: 50px;
+      flex-shrink: 0;
     }
   }
+}
 
-  .table-cell-color {
-    background-color: $table-cell-color;
-  }
-
-  .table-status-color {
-    color: $table-status-color;
-  }
-
-  .image {
-    height: 50px;
-    width: 50px;
-    flex-shrink: 0;
+@media (max-width: 768px) {
+  .table-wrapper {
+    flex-wrap: wrap;
+    margin-top: 0;
+    .table-container {
+      width: 100%;
+      margin: 15px;
+    }
   }
 }

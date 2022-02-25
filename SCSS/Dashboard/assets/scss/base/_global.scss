@@ -26,6 +26,19 @@ body {
   position: absolute;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-vertical {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 // flex styles
 .d-flex {
   display: flex;
@@ -39,6 +52,10 @@ body {
   flex-direction: column;
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-grow-1 {
   flex-grow: 1;
 }
@@ -50,7 +67,7 @@ body {
 .justify-content-end {
   justify-content: flex-end;
 }
-.justify-content-center{
+.justify-content-center {
   justify-content: center;
 }
 

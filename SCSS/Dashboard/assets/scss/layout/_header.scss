@@ -21,6 +21,15 @@
       padding-left: 20px;
       cursor: pointer;
     }
+
+    .search-textbox {
+      width: $search-box-width;
+      height: $search-box-height;
+      background-color: $search-bar-color;
+      padding-left: 10px;
+      border: $search-bar-color;
+      outline: none;
+    }
   }
 
   .icon {
@@ -34,6 +43,49 @@
     width: 50px;
     flex-shrink: 0;
     border-radius: $rounded-circle;
-    margin-right: 60px;
+    margin-right: 10px;
+  }
+
+  .down-arrow {
+    font-size: $header-icon-size;
+    color: $icon-color;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+
+    .header-icon {
+      font-size: 20px;
+      padding: 20px;
+    }
+
+    .search {
+      margin-left: 20px;
+
+      .search-icon {
+        font-size: 16px;
+      }
+
+      .search-textbox {
+        width: 200px;
+        height: 10px;
+      }
+    }
+
+    .icon {
+      font-size: 20px;
+    }
+
+    .image {
+      height: 35px;
+      width: 35px;
+    }
+
+    .down-arrow {
+      font-size: 20px;
+    }
   }
 }

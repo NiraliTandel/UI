@@ -2,8 +2,33 @@
 .dashboard-container {
   background-color: #f8f8f8;
 
+  .icon {
+    font-size: 20px;
+    color: $icon-color;
+    top: 50%;
+    left: 0;
+  }
+
   .heading {
     font-size: 24px;
-    margin: 40px;
   }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked {
+    & ~ aside {
+      width: 0;
+      transform: translateX(-100%);
+    }
+
+    & ~ main .icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.p-30 {
+  padding: 30px;
 }

@@ -1,9 +1,25 @@
 // Form controls styles goes here
-input {
-  width: $search-box-width;
-  height: $search-box-height;
-  background-color: $search-bar-color;
-  padding-left: 10px;
-  border: $search-bar-color;
-  outline: none;
-}
+
+// Search Input
+// .search-input {
+//   width: $search-box-width;
+//   height: $search-box-height;
+//   background-color: $search-bar-color;
+//   padding-left: 10px;
+//   border: $search-bar-color;
+//   outline: none;
+// }
+
+// Checkbox Input
+// input[type="checkbox"] {
+//   display: none;
+// }
+
+// input[type="checkbox"]:checked ~ aside {
+//   width: 0;
+//   transform: translateX(-100%);
+
+//   .checkbox-icon {
+//     transform: rotate(180deg);
+//   }
+// }

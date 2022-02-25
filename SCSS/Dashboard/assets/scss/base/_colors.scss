@@ -56,11 +56,13 @@ $cart-card-box-color: #f3f9f9;
 
 // Table
 $table-bg: $white;
+$table-head-bg: $white;
 $table-cell-color: #f8f8f8;
 $table-text-color: $text-color;
 $table-status-color: $primary;
 
 // Graph
 $graph-bg: $white;
-$graph-big-text-color: $text-color;
-$graph-small-text-color: $text-muted-color;
+
+// Scrollbar
+$scrollbar-color: #bbbbbb;
