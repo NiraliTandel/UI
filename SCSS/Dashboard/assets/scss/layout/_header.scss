@@ -4,6 +4,7 @@
   height: $header-height;
   border-bottom: 1px solid $border-bottom-color;
   flex-shrink: 0;
+  position: relative;
 
   .header-icon {
     font-size: $header-icon-size;
@@ -14,7 +15,7 @@
   .search {
     background-color: $search-bar-color;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 30px;
 
     .search-icon {
       font-size: $search-icon-size;
@@ -51,9 +52,56 @@
     color: $icon-color;
     padding-right: 40px;
   }
+
+  .icon-arrow_down_icon {
+    font-size: $header-icon-size;
+    color: $icon-color;
+    margin-right: 20px;
+  }
+
+  #drop-down {
+    display: none;
+  }
+  
+  .mobile-drop-down {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    z-index: 999;
+    background-color: $white;
+    align-items: center;
+    justify-content: center;
+    transition: $transition-timing all;
+  }
+
+  #drop-down:checked {
+    & ~ .mobile-drop-down {
+      z-index: 999;
+      top: 0;
+      transform: translateX(-100px) translateY(50px);
+
+      .icon {
+        padding: 10px;
+        display: block;
+        text-align: center;
+      }
+      .image {
+        margin: 10px;
+        text-align: center;
+      }
+    }
+  }
 }
 
-@media (max-width: 768px) {
+@include for-size (lg) {
+  .header {
+    .search {
+      margin-left: 20px;
+    }
+  }
+}
+
+@include for-size (md) {
   .header {
     height: 60px;
 
@@ -63,10 +111,11 @@
     }
 
     .search {
-      margin-left: 20px;
+      margin-left: 35px;
 
       .search-icon {
         font-size: 16px;
+        padding-left: 10px;
       }
 
       .search-textbox {
@@ -86,6 +135,68 @@
 
     .down-arrow {
       font-size: 20px;
+    }
+  }
+}
+
+@include for-size (sm) {
+  .header {
+    .header-icon {
+      font-size: 16px;
+    }
+    .search {
+      margin-left: 20px;
+      .search-icon {
+        font-size: 12px;
+      }
+      .search-textbox {
+        width: 150px;
+        height: 20px;
+      }
+    }
+    .icon {
+      font-size: 16px;
+      padding-right: 15px;
+    }
+    .image {
+      margin-right: 5px;
+    }
+    .down-arrow {
+      font-size: 16px;
+      padding-right: 20px;
+    }
+  }
+}
+
+@include for-size (x-sm){
+  .header {
+    height: 50px; 
+    .header-icon {
+      font-size: 16px;
+      padding: 16px;
+    }
+
+    .search {
+      margin-left: 30px;
+
+      .search-icon {
+        font-size: 12px;
+      }
+
+      .search-textbox {
+        width: 100px;
+        height: 20px;
+        &:focus {
+          width: 150px;
+        }
+      }
+    }
+    .header-side{
+      display: none;
+    }
+
+    .drop-down-menu {
+      display: block;
     }
   }
 }

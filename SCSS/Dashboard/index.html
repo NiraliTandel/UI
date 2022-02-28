@@ -1,312 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/icon/style.css" />
-    <link rel="stylesheet" href="assets/css/style.min.css" />
-  </head>
-  <body>
-    <div class="d-flex flex-column h-100">
-      <!--Start: Header-->
-      <header class="header d-flex justify-content-between align-items-center">
-        <div class="d-flex">
-          <a href="#">
-            <span
-              class="icon-square_icon header-icon justify-content-center align-items-center"
-            ></span>
-          </a>
-          <div class="search d-flex position-relative">
-            <label for="searchInput"
-              ><span class="icon-search_icon search-icon"></span
-            ></label>
-            <span>
-              <input
-                type="search"
-                name="search"
-                id="searchInput"
-                placeholder="Search for transaction, item, etc"
-                class="search-textbox"
-              />
-            </span>
-            <button type="button" class="">Search</button>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/icon/style.css" />
+  <link rel="stylesheet" href="assets/css/style.min.css" />
+</head>
+
+<body>
+  <div class="d-flex flex-column h-100">
+    <!--Start: Header-->
+    <header class="header d-flex justify-content-between align-items-center">
+      <div class="d-flex">
+        <a href="#">
+          <span class="icon-square_icon header-icon justify-content-center align-items-center"></span>
+        </a>
+        <div class="search d-flex position-relative">
+          <label for="searchInput"><span class="icon-search_icon search-icon"></span></label>
+          <span>
+            <input type="search" name="search" id="searchInput" placeholder="Search for transaction, item, etc"
+              class="search-textbox" />
+          </span>
+          <button type="button" class="">Search</button>
         </div>
-        <div class="d-flex justify-content-center align-items-center">
+      </div>
+      <div class="d-flex justify-content-center align-items-center header-side">
+        <a href="#"><span class="icon-chat_icon icon"></span></a>
+        <a href="#"><span class="icon-bell_icon icon"></span></a>
+        <figure><img src="assets/images/female.png" class="image" /></figure>
+        <a href="#"><span class="icon-arrow_down_icon down-arrow"></span></a>
+      </div>
+      <div class="drop-down-menu">
+        <input type="checkbox" id="drop-down">
+        <label for="drop-down"><span class="icon-arrow_down_icon"></span></label>
+        <div class="d-flex mobile-drop-down flex-column">
           <a href="#"><span class="icon-chat_icon icon"></span></a>
           <a href="#"><span class="icon-bell_icon icon"></span></a>
           <figure><img src="assets/images/female.png" class="image" /></figure>
-          <a href="#"><span class="icon-arrow_down_icon down-arrow"></span></a>
         </div>
-      </header>
-      <!--End: Header-->
-      <!--Start: Section-->
+      </div>
+    </header>
+    <!--End: Header-->
+    <!--Start: Section-->
 
-      <section class="dashboard-container d-flex flex-grow-1 overflow-hidden">
-        <!--Start: Aside-->
-        <input type="checkbox" id="sidebar-checkbox" />
-        <aside class="sidebar d-flex flex-column h-100">
-          <div class="flex-grow-1 overflow-hidden">
-            <nav
-              class="d-flex flex-grow-1 justify-content-center overflow-vertical h-100"
-            >
-              <ul class="nav-bar">
-                <li class="menu">
-                  <a href="#" class="nav-link">
-                    <span class="icon-menu_icon menu-icon"></span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <span class="icon-cart_icon icon"></span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <span class="icon-file_icon icon"></span>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <span class="icon-setting_icon icon"></span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-          <nav class="d-flex justify-content-center">
+    <section class="dashboard-container d-flex flex-grow-1 overflow-hidden">
+      <!--Start: Aside-->
+      <input type="checkbox" id="sidebar-checkbox" checked />
+      <aside class="sidebar d-flex flex-column flex-shrink-0 h-100 position-relative">
+        <div class="flex-grow-1 overflow-hidden">
+          <nav class="d-flex flex-grow-1 justify-content-center overflow-vertical h-100">
             <ul class="nav-bar">
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <span class="icon-warning_icon icon"></span>
+              <li class="menu">
+                <a href="#" class="nav-link active">
+                  <span class="icon-menu_icon icon"></span>
                 </a>
               </li>
-              <li class="logout">
+              <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <span class="icon-logout_icon icon"></span>
+                  <span class="icon-cart_icon icon"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <span class="icon-file_icon icon"></span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <span class="icon-setting_icon icon"></span>
                 </a>
               </li>
             </ul>
           </nav>
-        </aside>
-        <!--End: Aside-->
-        <!--Start: Main-->
-        <main
-          class="dashboard-container flex-grow-1 position-relative h-100 overflow-vertical p-30"
-        >
-          <label for="sidebar-checkbox">
-            <span class="icon-arrow_in_icon icon position-absolute"></span>
-          </label>
-          <div class="heading">
-            <h1>Dashboard</h1>
+        </div>
+        <nav class="d-flex justify-content-center">
+          <ul class="nav-bar">
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <span class="icon-warning_icon icon"></span>
+              </a>
+            </li>
+            <li class="logout">
+              <a href="#" class="nav-link">
+                <span class="icon-logout_icon icon"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!--End: Aside-->
+      <!--Start: Main-->
+      <main class="dashboard-container flex-grow-1 h-100 overflow-vertical p-30">
+        <label for="sidebar-checkbox">
+          <span class="icon-arrow_in_icon icon position-absolute"></span>
+        </label>
+        <div class="heading">
+          <h1>Dashboard</h1>
+        </div>
+        <div class="d-flex justify-content-between card-container flex-wrap">
+          <div class="card view-card">
+            <div class="inner-card">
+              <div class="d-flex justify-content-between">
+                <div class="view-icon-box d-flex justify-content-center align-items-center">
+                  <span class="icon-view_icon view-icon"></span>
+                </div>
+                <span class="icon-show-chart_icon graph-up"></span>
+              </div>
+              <div class="card-text">Total Views</div>
+              <div class="card-number">308.402</div>
+              <div class="card-text">Start from 1 Jan 2021</div>
+            </div>
           </div>
-          <div class="d-flex justify-content-between card-container flex-wrap">
-            <div class="card view-card">
-              <div class="inner-card">
-                <div class="d-flex justify-content-between">
-                  <div
-                    class="view-icon-box d-flex justify-content-center align-items-center"
-                  >
-                    <span class="icon-view_icon view-icon"></span>
-                  </div>
-                  <span class="icon-show-chart_icon graph-up"></span>
+          <div class="card bag-card">
+            <div class="inner-card">
+              <div class="d-flex justify-content-between">
+                <div class="bag-icon-box d-flex justify-content-center align-items-center">
+                  <span class="icon-bag_icon bag-icon"></span>
                 </div>
-                <div class="card-text">Total Views</div>
-                <div class="card-number">308.402</div>
-                <div class="card-text">Start from 1 Jan 2021</div>
+                <span class="icon-show-chart_icon graph-down"></span>
               </div>
-            </div>
-            <div class="card bag-card">
-              <div class="inner-card">
-                <div class="d-flex justify-content-between">
-                  <div
-                    class="bag-icon-box d-flex justify-content-center align-items-center"
-                  >
-                    <span class="icon-bag_icon bag-icon"></span>
-                  </div>
-                  <span class="icon-show-chart_icon graph-down"></span>
-                </div>
-                <div class="card-text">Total Products</div>
-                <div class="card-number">10.820</div>
-                <div class="card-text">
-                  <a href="#" class="link-color">+ Add New Product</a>
-                </div>
-              </div>
-            </div>
-            <div class="card user-card">
-              <div class="inner-card">
-                <div class="d-flex justify-content-between">
-                  <div
-                    class="user-icon-box d-flex justify-content-center align-items-center"
-                  >
-                    <span class="icon-person_icon user-icon"></span>
-                  </div>
-                  <span class="icon-show-chart_icon graph-up"></span>
-                </div>
-                <div class="card-text">Total Users</div>
-                <div class="card-number">8.425</div>
-                <div class="card-text">New user noted every week</div>
-              </div>
-            </div>
-            <div class="card cart-card">
-              <div class="inner-card">
-                <div class="d-flex justify-content-between">
-                  <div
-                    class="cart-icon-box d-flex justify-content-center align-items-center"
-                  >
-                    <span class="icon-cart_icon cart-icon"></span>
-                  </div>
-                  <span class="icon-show-chart_icon graph-up"></span>
-                </div>
-                <div class="card-text">Total Sells</div>
-                <div class="card-number">1.028.623</div>
-                <div class="card-text">Start from 1 Jan 2021</div>
+              <div class="card-text">Total Products</div>
+              <div class="card-number">10.820</div>
+              <div class="card-text">
+                <a href="#" class="link-color">+ Add New Product</a>
               </div>
             </div>
           </div>
-          <div class="table-wrapper d-flex">
-            <div
-              class="table-container h-100 overflow-hidden d-flex flex-column"
-            >
-              <div>
-                <table>
-                  <thead class="thead">
-                    <th class="prod-no">No</th>
-                    <th class="prod-img"></th>
-                    <th class="prod-name">Product Name</th>
-                    <th class="prod-status">Status</th>
-                    <th class="prod-sold">Sold</th>
-                    <th class="prod-view">View</th>
-                  </thead>
-                </table>
+          <div class="card user-card">
+            <div class="inner-card">
+              <div class="d-flex justify-content-between">
+                <div class="user-icon-box d-flex justify-content-center align-items-center">
+                  <span class="icon-person_icon user-icon"></span>
+                </div>
+                <span class="icon-show-chart_icon graph-up"></span>
               </div>
-              <div class="overflow-vertical flex-grow-1">
-                <table>
-                  <tbody class="table-cell-color">
-                    <tr>
-                      <td class="prod-no">1</td>
-                      <td class="prod-img">
-                        <figure>
-                          <img
-                            src="assets/images/web-design.jpg"
-                            class="image"
-                          />
-                        </figure>
-                      </td>
-                      <td class="prod-name">Mobile App UI KIT F...</td>
-                      <td class="prod-status table-status-color">Active</td>
-                      <td class="prod-sold">10</td>
-                      <td class="prod-view">320</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>
-                        <figure>
-                          <img
-                            src="assets/images/web-design.jpg"
-                            class="image"
-                          />
-                        </figure>
-                      </td>
-                      <td>40+ Landing Page Temp...</td>
-                      <td class="table-status-color">Active</td>
-                      <td>10</td>
-                      <td>320</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>
-                        <figure>
-                          <img
-                            src="assets/images/web-design.jpg"
-                            class="image"
-                          />
-                        </figure>
-                      </td>
-                      <td>Doctor Consultant UI KIT ...</td>
-                      <td class="table-status-color">Active</td>
-                      <td>10</td>
-                      <td>320</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>
-                        <figure>
-                          <img
-                            src="assets/images/web-design.jpg"
-                            class="image"
-                          />
-                        </figure>
-                      </td>
-                      <td>Startup Illustration KIT Ve...</td>
-                      <td class="table-status-color">Active</td>
-                      <td>10</td>
-                      <td>320</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <div class="card-text">Total Users</div>
+              <div class="card-number">8.425</div>
+              <div class="card-text">New user noted every week</div>
             </div>
-            <div class="d-flex flex-column graph-container">
-              <div class="d-flex flex-row justify-content-between">
-                <div class="graph-heading">Views & Sells</div>
-                <div class="arrow-text">This Week<span class="icon-arrow_down_icon justify-content-center align-items-center"></span></div>
+          </div>
+          <div class="card cart-card">
+            <div class="inner-card">
+              <div class="d-flex justify-content-between">
+                <div class="cart-icon-box d-flex justify-content-center align-items-center">
+                  <span class="icon-cart_icon cart-icon"></span>
+                </div>
+                <span class="icon-show-chart_icon graph-up"></span>
               </div>
-              <div class="graph-text d-flex flex-row">
-                <div class="d-flex flex-row">
-                  <div class="view-icon-square"></div>
-                  <span>Total Views</span>
-                </div>
-                <div class="d-flex flex-row">
-                  <span class="sell-icon-square"></span>
-                  <span>Total Sells</span>
-                </div>
-              </div class="flex-row">
-              <div class="graph d-flex flex-row flex-grow-1">
-                <div class="graph-line">
-                  <div class="view h-50"></div>
-                  <div class="sell h-60"></div>
-                  <p>M</p>
-                </div>
-                <div class="graph-line">
-                  <div class="view h-60"></div>
-                  <div class="sell h-70"></div>
-                  <p>T</p>
-                </div>
-                <div class="graph-line">
-                  <div class="view h-40"></div>
-                  <div class="sell h-60"></div>
-                  <p>W</p>
-                </div>
-                <div class="graph-line">
-                  <div class="view h-50"></div>
-                  <div class="sell h-70"></div>
-                  <p>T</p>
-                </div>
-                <div class="graph-line">
-                  <div class="view h-60"></div>
-                  <div class="sell h-60"></div>
-                  <p>F</p>
-                </div>
-                <div class="graph-line">
-                  <div class="view h-60"></div>
-                  <div class="sell h-70"></div>
-                  <p>S</p>
-                </div>
-                <div class="graph-line">
-                  <div class="view h-70"></div>
-                  <div class="sell h-70"></div>
-                  <p>S</p>
-                </div>
+              <div class="card-text">Total Sells</div>
+              <div class="card-number">1.028.623</div>
+              <div class="card-text">Start from 1 Jan 2021</div>
+            </div>
+          </div>
+        </div>
+        <div class="table-wrapper d-flex">
+          <div class="table-container h-100 overflow-hidden d-flex flex-column">
+            <div class="overflow-auto">
+              <table class="position-relative">
+                <thead class="thead">
+                  <th class="table-cell">No</th>
+                  <th class="table-cell"></th>
+                  <th class="table-cell">Product Name</th>
+                  <th class="table-cell">Status</th>
+                  <th class="table-cell">Sold</th>
+                  <th class="table-cell">View</th>
+                </thead>
+                <tbody class="tbody table-cell-color">
+                  <tr>
+                    <td class="table-cell">1</td>
+                    <td class="table-cell">
+                      <figure>
+                        <img src="assets/images/web-design.jpg" class="image" />
+                      </figure>
+                    </td>
+                    <td class="table-cell product-name">Mobile App UI KIT F...</td>
+                    <td class="table-cell table-status-color">Active</td>
+                    <td class="table-cell">10</td>
+                    <td class="table-cell">320</td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">2</td>
+                    <td class="table-cell">
+                      <figure>
+                        <img src="assets/images/web-design.jpg" class="image" />
+                      </figure>
+                    </td>
+                    <td class="table-cell product-name">40+ Landing Page Temp...</td>
+                    <td class="table-cell table-status-color">Active</td>
+                    <td class="table-cell">10</td>
+                    <td class="table-cell">320</td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">3</td>
+                    <td class="table-cell">
+                      <figure>
+                        <img src="assets/images/web-design.jpg" class="image" />
+                      </figure>
+                    </td>
+                    <td class="table-cell product-name">Doctor Consultant UI KIT ...</td>
+                    <td class="table-cell table-status-color">Active</td>
+                    <td class="table-cell">10</td>
+                    <td class="table-cell">320</td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">4</td>
+                    <td class="table-cell">
+                      <figure>
+                        <img src="assets/images/web-design.jpg" class="image" />
+                      </figure>
+                    </td>
+                    <td class="table-cell product-name">Startup Illustration KIT Ve...</td>
+                    <td class="table-cell table-status-color">Active</td>
+                    <td class="table-cell">10</td>
+                    <td class="table-cell">320</td>
+                  </tr>
+                  <tr>
+                    <td class="table-cell">5</td>
+                    <td class="table-cell">
+                      <figure>
+                        <img src="assets/images/web-design.jpg" class="image" />
+                      </figure>
+                    </td>
+                    <td class="table-cell product-name">Mobile App UI KIT F...</td>
+                    <td class="table-cell table-status-color">Active</td>
+                    <td class="table-cell">10</td>
+                    <td class="table-cell">320</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="d-flex flex-column graph-container">
+            <div class="d-flex flex-row justify-content-between">
+              <div class="graph-heading">Views & Sells</div>
+              <div class="arrow-text">This Week<span
+                  class="icon-arrow_down_icon arrow-icon justify-content-center align-items-center"></span></div>
+            </div>
+            <div class="graph-text d-flex flex-row">
+              <div class="d-flex flex-row">
+                <div class="view-icon-square"></div>
+                <span>Total Views</span>
+              </div>
+              <div class="d-flex flex-row">
+                <span class="sell-icon-square"></span>
+                <span>Total Sells</span>
+              </div>
+            </div class="flex-row">
+            <div class="graph d-flex flex-row flex-grow-1">
+              <div class="graph-line">
+                <div class="view h-50"></div>
+                <div class="sell h-60"></div>
+                <p>M</p>
+              </div>
+              <div class="graph-line">
+                <div class="view h-60"></div>
+                <div class="sell h-70"></div>
+                <p>T</p>
+              </div>
+              <div class="graph-line">
+                <div class="view h-40"></div>
+                <div class="sell h-60"></div>
+                <p>W</p>
+              </div>
+              <div class="graph-line">
+                <div class="view h-50"></div>
+                <div class="sell h-70"></div>
+                <p>T</p>
+              </div>
+              <div class="graph-line">
+                <div class="view h-60"></div>
+                <div class="sell h-60"></div>
+                <p>F</p>
+              </div>
+              <div class="graph-line">
+                <div class="view h-60"></div>
+                <div class="sell h-70"></div>
+                <p>S</p>
+              </div>
+              <div class="graph-line">
+                <div class="view h-70"></div>
+                <div class="sell h-70"></div>
+                <p>S</p>
               </div>
             </div>
           </div>
-        </main>
-        <!--End: Main-->
-      </section>
-      <!--End: Section-->
-    </div>
-  </body>
+        </div>
+      </main>
+      <!--End: Main-->
+    </section>
+    <!--End: Section-->
+  </div>
+</body>
+
 </html>

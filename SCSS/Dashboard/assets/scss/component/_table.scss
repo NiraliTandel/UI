@@ -5,53 +5,39 @@
     background-color: $table-bg;
     margin: 0 15px;
     padding: 20px;
-    height: 400px;
+    height: 500px;
     width: 65%;
 
     table {
-      border-collapse: separate;
+      border-collapse: collapse;
       text-align: left;
-      border-spacing: 0 20px;
       width: 100%;
 
-      th {
-        font-size: $table-heading-size;
-        background-color: $table-head-bg;
+      .thead {
+        margin-left: 10px;
+        margin-right: 20px;
+        .table-cell {
+          position: sticky;
+          top: 0;
+          padding: 10px;
+          font-size: $table-heading-size;
+          background-color: $table-head-bg;
+        }
       }
+    }
 
-      td {
+    .tbody {
+      .table-cell {
         padding: 10px;
+        border-top: 20px solid $white;
         font-size: $table-text-size;
         font-weight: $font-weight-bold;
       }
-
-      thead {
-        margin-left: 10px;
-        margin-right: 20px;
-      }
-
-      .prod-no {
-        width: 5%;
-      }
-
-      .prod-img {
-        width: 15%;
-      }
-
-      .prod-name {
-        width: 45%;
-      }
-
-      .prod-status {
-        width: 15%;
-      }
-
-      .prod-sold {
-        width: 10%;
-      }
-
-      .prod-view {
-        width: 10%;
+      .product-name {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 70px;
+        overflow: hidden;
       }
     }
 
@@ -71,12 +57,22 @@
   }
 }
 
-@media (max-width: 768px) {
+@include for-size(md) {
   .table-wrapper {
     flex-wrap: wrap;
     margin-top: 0;
     .table-container {
       width: 100%;
+      margin: 15px;
+    }
+  }
+}
+
+@include for-size(sm) {
+  .table-wrapper {
+    flex-wrap: wrap;
+    margin-top: 0;
+    .table-container {
       margin: 15px;
     }
   }

@@ -60,6 +60,10 @@ body {
   flex-grow: 1;
 }
 
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -73,6 +77,10 @@ body {
 
 .justify-content-between {
   justify-content: space-between;
+}
+
+.drop-down-menu {
+  display: none;
 }
 
 @each $percent in (25, 50, 75, 100) {

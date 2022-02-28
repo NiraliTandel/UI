@@ -11,9 +11,22 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@include for-size (lg) {
   button {
     width: 50px;
     height: 30px;
+  }
+}
+
+@include for-size (sm) {
+  button {
+    width: 50px;
+    height: 20px;
+  }
+}
+
+@include for-size (x-sm) {
+  button {
+    display: none;
   }
 }

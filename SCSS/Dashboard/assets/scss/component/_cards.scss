@@ -141,18 +141,19 @@
   }
 }
 
-.padding-top-10 {
-  padding-top: 10px;
-}
-
-.margin-left-25 {
-  margin-left: 25px;
-}
-
-@media (max-width: 768px) {
+@include for-size (md) {
   .card-container {
     .card {
       width: 50%;
+      padding: 15px;
+    }
+  }
+}
+
+@include for-size (sm) {
+  .card-container {
+    .card {
+      width: 100%;
       padding: 15px;
     }
   }

@@ -6,21 +6,28 @@
     font-size: 20px;
     color: $icon-color;
     top: 50%;
-    left: 0;
+    left: 90px;
+    transition: $transition-timing all;
+    cursor: pointer;
   }
 
   .heading {
     font-size: 24px;
   }
 
-  input[type="checkbox"] {
+  #sidebar-checkbox {
     display: none;
   }
 
-  input[type="checkbox"]:checked {
+  #sidebar-checkbox:checked {
+    & ~ .dashboard-container {
+      .icon {
+        left: 0;
+      }
+    }
     & ~ aside {
       width: 0;
-      transform: translateX(-100%);
+      transform: translateX(-90px);
     }
 
     & ~ main .icon {
@@ -31,4 +38,22 @@
 
 .p-30 {
   padding: 30px;
+}
+
+@include for-size(sm) {
+  .dashboard-container {
+    .icon {
+      top: 50%;
+      left: 12%;
+    }
+  }
+}
+
+@include for-size(x-sm) {
+  .dashboard-container {
+    .icon {
+      top: 50%;
+      left: 15%;
+    }
+  }
 }
