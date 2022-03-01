@@ -1,0 +1,11 @@
+// Main content styles goes here
+.main-container {
+  background-color: $body-bg;
+  padding: 30px;
+
+  h5 {
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    padding-bottom: 20px;
+  }
+}

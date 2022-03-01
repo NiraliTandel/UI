@@ -1,0 +1,72 @@
+// Table styles goes here
+.table-container {
+  background-color: $white;
+  padding: 10px;
+  height: 500px;
+
+  table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+
+    .thead {
+      .table-cell {
+        font-size: 16px;
+        font-weight: 400;
+        color: $lighter-text-color;
+        padding: 20px 0;
+        position: sticky;
+        top: 0;
+        background-color: $white;
+      }
+    }
+
+    .tbody {
+      .table-cell {
+        border-top: 2px solid $table-border-color;
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .butter-image {
+    height: 40px;
+    width: 40px;
+    flex-shrink: 0;
+  }
+
+  .amazon-image {
+    height: 30px;
+    width: 50px;
+    flex-shrink: 0;
+  }
+
+  .discard {
+    padding: 10px;
+    border-radius: 20px;
+    color: $discard-color;
+    background-color: $discard-bg-color;
+  }
+
+  .want {
+    padding: 10px;
+    border-radius: 20px;
+    color: $want-color;
+    background-color: $want-bg-color;
+  }
+
+  .waiting {
+    padding: 10px;
+    border-radius: 20px;
+    color: $waiting-color;
+    background-color: $waiting-bg-color;
+  }
+
+  .cancel {
+    padding: 10px;
+    border-radius: 20px;
+    color: $cancel-color;
+    background-color: $cancel-bg-color;
+  }
+}

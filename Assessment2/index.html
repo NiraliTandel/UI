@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/icon/style.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="d-flex flex-column h-100">
+    <!--Start: Header-->
+    <header class="header d-flex justify-content-between align-items-center">
+      <div class="d-flex justify-content-center align-items-center">
+        <h1>TallyScan</h1>
+        <div class="d-flex justify-content-center align-items-center">
+          <label for="menu" class="menu-icon"><span class="icon-hamburger_menu_icon"></span></label>
+          <h2>Dashboard</h2>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <a href="#"><span class="icon-notification_icon icon"></span></a>
+        <figure><img src="assets/images/female.png" alt="female-img" class="image" /></figure>
+        <h5>John Smith</h5>
+        <a href="#"><span class="icon-arrow_down_icon down-arrow"></span></a>
+      </div>
+    </header>
+    <!--End: Header-->
+    <!--Start: Section-->
+    <section class="d-flex flex-grow-1 overflow-hidden">
+      <!--Start: Sidebar-->
+      <input type="checkbox" id="menu" checked />
+      <aside class="sidebar d-flex flex-column flex-shrink-0 h-100">
+        <div class="flex-grow-1 overflow-hidden">
+          <nav class="d-flex flex-grow-1 flex-column overflow-vertical h-100">
+            <ul class="nav-bar">
+              <h5>GENERAL</h5>
+              <li class="nav-item">
+                <a href="#" class="nav-link d-flex align-items-center">
+                  <span class="icon-search_icon icon"></span>
+                  <span class="text">Search</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link d-flex align-items-center">
+                  <span class="icon-notification_icon icon"></span>
+                  <span class="text">Alerts</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link d-flex align-items-center">
+                  <span class="icon-tags_icon icon"></span>
+                  <span class="text">Tags</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav-bar">
+              <h5>OTHERS</h5>
+              <li class="nav-item">
+                <a href="#" class="nav-link d-flex align-items-center">
+                  <span class="icon-settings_icon icon"></span>
+                  <span class="text">Settings</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link d-flex align-items-center">
+                  <span class="icon-tips_icon icon"></span>
+                  <span class="text">Tips</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link d-flex align-items-center">
+                  <span class="icon-trash_icon icon"></span>
+                  <span class="text">Trash</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link d-flex align-items-center">
+                  <span class="icon-logout_icon icon"></span>
+                  <span class="text">Logout</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      <!--End: Sidebar-->
+      <!--Start: Main-->
+      <main class="main-container flex-grow-1 h-100">
+        <div>
+          <div class="d-flex justify-content-end">
+            <button class="filter-btn">
+              <span class="icon-filter_icon"></span>
+              <span>Filter</span>
+            </button>
+          </div>
+          <!--Start: Cards-->
+          <div class="d-flex justify-content-between card-container flex-wrap">
+            <div class="card scan-card">
+              <div class="inner-card scan-card">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div class="card-text">Scans</div>
+                    <div class="card-number">350</div>
+                  </div>
+                  <div class="scan-icon-circle d-flex justify-content-center align-items-center">
+                    <span class="icon-scan_icon scan-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card list-card">
+              <div class="inner-card list-card">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div class="card-text">List</div>
+                    <div class="card-number">350</div>
+                  </div>
+                  <div class="list-icon-circle d-flex justify-content-center align-items-center">
+                    <span class="icon-list_icon list-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card cost-card">
+              <div class="inner-card cost-card">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div class="card-text">Cost</div>
+                    <div class="card-number">$345</div>
+                  </div>
+                  <div class="cost-icon-circle d-flex justify-content-center align-items-center">
+                    <span class="icon-coin_icon cost-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card cart-card">
+              <div class="inner-card cart-card">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div class="card-text">Buy Now</div>
+                    <div class="card-number">350</div>
+                  </div>
+                  <div class="cart-icon-circle d-flex justify-content-center align-items-center">
+                    <span class="icon-cart_icon cart-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card money-card">
+              <div class="inner-card money-card">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div class="card-text">Buy Cheaper</div>
+                    <div class="card-number">350</div>
+                  </div>
+                  <div class="money-icon-circle d-flex justify-content-center align-items-center">
+                    <span class="icon-money_icon money-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card health-card">
+              <div class="inner-card health-card">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <div class="card-text">Buy Healthier</div>
+                    <div class="card-number">350</div>
+                  </div>
+                  <div class="health-icon-circle d-flex justify-content-center align-items-center">
+                    <span class="icon-heart_icon health-icon"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End: Cards-->
+          <div>
+            <h5>Recent Activity</h5>
+            <!--Start: Table-->
+            <div class="table-container d-flex flex-column overflow-hidden">
+              <div class="overflow-auto">
+                <table class="position-relative">
+                  <thead class="thead">
+                    <th class="table-cell">Item</th>
+                    <th class="table-cell">Date</th>
+                    <th class="table-cell">Type</th>
+                    <th class="table-cell">Est.Cost</th>
+                    <th class="table-cell">Last</th>
+                    <th class="table-cell">List</th>
+                    <th class="table-cell">Auto</th>
+                    <th class="table-cell">Buy Now</th>
+                  </thead>
+                  <tbody class="tbody">
+                    <tr>
+                      <td class="table-cell">
+                        <div class="d-flex align-items-center">
+                          <figure><img src="assets/images/peanut_butter.png" alt="peanut_butter" class="butter-image" />
+                          </figure>
+                          Skippy Peanut Butter 160z
+                        </div>
+                      </td>
+                      <td class="table-cell">07 Nov, 8:35pm</td>
+                      <td class="table-cell"><span class="discard">Discarded</span></td>
+                      <td class="table-cell">$40.27</td>
+                      <td class="table-cell">18 Aug</td>
+                      <td class="table-cell">Grocery</td>
+                      <td class="table-cell">No</td>
+                      <td class="table-cell">
+                        <div>
+                          <figure><img src="assets/images/amazon_logo.png" alt="amazon" class="amazon-image" /></figure>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="table-cell">
+                        <div class="d-flex align-items-center">
+                          <figure><img src="assets/images/peanut_butter.png" alt="peanut_butter" class="butter-image" />
+                          </figure>
+                          Skippy Peanut Butter 160z
+                        </div>
+                      </td>
+                      <td class="table-cell">07 Nov, 8:35pm</td>
+                      <td class="table-cell"><span class="want">Want</span></td>
+                      <td class="table-cell">$40.27</td>
+                      <td class="table-cell">18 Aug</td>
+                      <td class="table-cell">Grocery</td>
+                      <td class="table-cell">No</td>
+                      <td class="table-cell">N/A</td>
+                    </tr>
+                    <tr>
+                      <td class="table-cell">
+                        <div class="d-flex align-items-center">
+                          <figure><img src="assets/images/peanut_butter.png" alt="peanut_butter" class="butter-image" />
+                          </figure>
+                          Skippy Peanut Butter 160z
+                        </div>
+                      </td>
+                      <td class="table-cell">07 Nov, 8:35pm</td>
+                      <td class="table-cell"><span class="waiting">Waiting</span></td>
+                      <td class="table-cell">$40.27</td>
+                      <td class="table-cell">18 Aug</td>
+                      <td class="table-cell">Grocery</td>
+                      <td class="table-cell">No</td>
+                      <td class="table-cell">
+                        <figure><img src="assets/images/amazon_logo.png" alt="amazon" class="amazon-image" /></figure>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="table-cell">
+                        <div class="d-flex align-items-center">
+                          <figure><img src="assets/images/peanut_butter.png" alt="peanut_butter" class="butter-image" />
+                          </figure>
+                          Skippy Peanut Butter 160z
+                        </div>
+                      </td>
+                      <td class="table-cell">07 Nov, 8:35pm</td>
+                      <td class="table-cell"><span class="discard">Discarded</span></td>
+                      <td class="table-cell">$40.27</td>
+                      <td class="table-cell">18 Aug</td>
+                      <td class="table-cell">Grocery</td>
+                      <td class="table-cell">No</td>
+                      <td class="table-cell">N/A</td>
+                    </tr>
+                    <tr>
+                      <td class="table-cell">
+                        <div class="d-flex align-items-center">
+                          <figure><img src="assets/images/peanut_butter.png" alt="peanut_butter" class="butter-image" />
+                          </figure>
+                          Skippy Peanut Butter 160z
+                        </div>
+                      </td>
+                      <td class="table-cell">07 Nov, 8:35pm</td>
+                      <td class="table-cell"><span class="cancel">Cancelled</span></td>
+                      <td class="table-cell">$40.27</td>
+                      <td class="table-cell">18 Aug</td>
+                      <td class="table-cell">Grocery</td>
+                      <td class="table-cell">No</td>
+                      <td class="table-cell">
+                        <figure><img src="assets/images/amazon_logo.png" alt="amazon" class="amazon-image" /></figure>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="table-cell">
+                        <div class="d-flex align-items-center">
+                          <figure><img src="assets/images/peanut_butter.png" alt="peanut_butter" class="butter-image" />
+                          </figure>
+                          Skippy Peanut Butter 160z
+                        </div>
+                      </td>
+                      <td class="table-cell">07 Nov, 8:35pm</td>
+                      <td class="table-cell"><span class="want">Want</span></td>
+                      <td class="table-cell">$40.27</td>
+                      <td class="table-cell">18 Aug</td>
+                      <td class="table-cell">Grocery</td>
+                      <td class="table-cell">No</td>
+                      <td class="table-cell">N/A</td>
+                    </tr>
+                    <tr>
+                      <td class="table-cell">
+                        <div class="d-flex align-items-center">
+                          <figure><img src="assets/images/peanut_butter.png" alt="peanut_butter" class="butter-image" />
+                          </figure>
+                          Skippy Peanut Butter 160z
+                        </div>
+                      </td>
+                      <td class="table-cell">07 Nov, 8:35pm</td>
+                      <td class="table-cell"><span class="want">Want</span></td>
+                      <td class="table-cell">$40.27</td>
+                      <td class="table-cell">18 Aug</td>
+                      <td class="table-cell">Grocery</td>
+                      <td class="table-cell">No</td>
+                      <td class="table-cell">
+                        <figure><img src="assets/images/amazon_logo.png" alt="amazon" class="amazon-image" /></figure>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="table-cell">
+                        <div class="d-flex align-items-center">
+                          <figure><img src="assets/images/peanut_butter.png" alt="peanut_butter" class="butter-image" />
+                          </figure>
+                          Skippy Peanut Butter 160z
+                        </div>
+                      </td>
+                      <td class="table-cell">07 Nov, 8:35pm</td>
+                      <td class="table-cell"><span class="want">Want</span></td>
+                      <td class="table-cell">$40.27</td>
+                      <td class="table-cell">18 Aug</td>
+                      <td class="table-cell">Grocery</td>
+                      <td class="table-cell">No</td>
+                      <td class="table-cell">N/A</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!--End: Table-->
+          </div>
+        </div>
+      </main>
+      <!--Start: Main-->
+    </section>
+    <!--End: Section-->
+  </div>
+</body>
+
+</html>

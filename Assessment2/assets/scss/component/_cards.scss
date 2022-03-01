@@ -1,0 +1,172 @@
+// Card styles goes here
+.card-container {
+  margin: 30px -15px;
+
+  .card {
+    width: 16.66%;
+    padding: 0 15px;
+    &:hover {
+      &.scan-card {
+        .inner-card {
+          background-color: $scan-circle-color;
+          .scan-icon-circle {
+            background-color: #e5e2e2;
+          }
+        }
+      }
+      &.list-card {
+        .inner-card {
+          background-color: $list-circle-color;
+          .list-icon-circle {
+            background-color: #bfd3ed;
+          }
+        }
+      }
+      &.cost-card {
+        .inner-card {
+          background-color: $cost-circle-color;
+          .cost-icon-circle {
+            background-color: #c4fde2;
+          }
+        }
+      }
+      &.cart-card {
+        .inner-card {
+          background-color: $cart-circle-color;
+          .cart-icon-circle {
+            background-color: #ffe1c0;
+          }
+        }
+      }
+      &.money-card {
+        .inner-card {
+          background-color: $money-circle-color;
+          .money-icon-circle {
+            background-color: #c5c1ff;
+          }
+        }
+      }
+      &.health-card {
+        .inner-card {
+          background-color: $health-circle-color;
+          .health-icon-circle {
+            background-color: #f3c8c6;
+          }
+        }
+      }
+      .inner-card {
+        .card-text,
+        .card-number,
+        .scan-icon,
+        .list-icon,
+        .cost-icon,
+        .cart-icon,
+        .money-icon,
+        .health-icon {
+          color: #4e4c4c;
+        }
+      }
+    }
+
+    .inner-card {
+      background-color: $white;
+      padding: 20px;
+      transition: $transition-timing all;
+
+      .card-text {
+        font-size: 16px;
+        color: $common-text-color;
+      }
+
+      .card-number {
+        font-size: 25px;
+        font-weight: $font-weight;
+        padding-top: 10px;
+      }
+    }
+
+    .scan-card {
+      .scan-icon-circle {
+        height: $card-circle-height;
+        width: $card-circle-width;
+        border-radius: $rounded-circle;
+        background-color: $scan-circle-color;
+      }
+
+      .scan-icon {
+        font-size: $card-icon-size;
+        color: $scan-icon-color;
+      }
+    }
+
+    .list-card {
+      .list-icon-circle {
+        height: $card-circle-height;
+        width: $card-circle-width;
+        border-radius: $rounded-circle;
+        background-color: $list-circle-color;
+      }
+
+      .list-icon {
+        font-size: $card-icon-size;
+        color: $list-icon-color;
+      }
+    }
+
+    .cost-card {
+      .cost-icon-circle {
+        height: $card-circle-height;
+        width: $card-circle-width;
+        border-radius: $rounded-circle;
+        background-color: $cost-circle-color;
+      }
+
+      .cost-icon {
+        font-size: $card-icon-size;
+        color: $cost-icon-color;
+      }
+    }
+
+    .cart-card {
+      .cart-icon-circle {
+        height: $card-circle-height;
+        width: $card-circle-width;
+        border-radius: $rounded-circle;
+        background-color: $cart-circle-color;
+      }
+
+      .cart-icon {
+        font-size: $card-icon-size;
+        color: $cart-icon-color;
+      }
+    }
+
+    .money-card {
+      .money-icon-circle {
+        height: $card-circle-height;
+        width: $card-circle-width;
+        border-radius: $rounded-circle;
+        background-color: $money-circle-color;
+      }
+
+      .money-icon {
+        font-size: $card-icon-size;
+        color: $money-icon-color;
+      }
+    }
+
+    .health-card {
+      .health-icon-circle {
+        height: $card-circle-height;
+        width: $card-circle-width;
+        border-radius: $rounded-circle;
+        background-color: $health-circle-color;
+      }
+
+      .health-icon {
+        font-size: $card-icon-size;
+        color: $health-icon-color;
+      }
+    }
+  }
+}

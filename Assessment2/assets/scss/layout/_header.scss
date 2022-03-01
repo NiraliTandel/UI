@@ -1,0 +1,49 @@
+// Header area style
+.header {
+  background-color: $white;
+  height: $header-height;
+  border-bottom: 1px solid $border-bottom-color;
+  flex-shrink: 0;
+
+  h1 {
+    font-size: 24px;
+    padding: 0 50px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 16px;
+    font-weight: $font-weight-bold;
+  }
+
+  .menu-icon {
+    font-size: 20px;
+    color: $icon-color;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+
+  .icon {
+    font-size: $header-icon-size;
+    color: $icon-color;
+    padding-right: 30px;
+  }
+
+  .image {
+    height: 40px;
+    width: 40px;
+    flex-shrink: 0;
+    border-radius: $rounded-circle;
+    margin-right: 20px;
+  }
+
+  .down-arrow {
+    font-size: $header-icon-size;
+    color: $icon-color;
+    padding-left: 10px;
+    padding-right: 40px;
+  }
+}
