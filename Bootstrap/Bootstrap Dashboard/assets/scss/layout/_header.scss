@@ -1,0 +1,51 @@
+// Header area style
+.header {
+  background-color: $white;
+  height: $header-height;
+  border-bottom: 1px solid $border-bottom-color;
+  flex-shrink: 0;
+
+  .tally-scan-text {
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 50px;
+  }
+
+  .dashboard-text {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .name-text {
+    font-size: 18px;
+    font-weight: 800px;
+  }
+
+  .menu-icon {
+    font-size: 20px;
+    color: $icon-color;
+    padding-right: 20px;
+    cursor: pointer;
+  }
+
+  .icon {
+    font-size: $header-icon-size;
+    color: $icon-color;
+    padding-right: 30px;
+  }
+
+  .image {
+    height: 40px;
+    width: 40px;
+    flex-shrink: 0;
+    border-radius: $rounded-circle;
+    margin-right: 20px;
+  }
+
+  .down-arrow {
+    font-size: $header-icon-size;
+    color: $icon-color;
+    padding-left: 10px;
+    padding-right: 40px;
+  }
+}

@@ -1,0 +1,11 @@
+// Main content styles goes here
+.main-container {
+  background-color: $body-bg;
+  padding: 30px;
+
+  .activity-text {
+    font-size: 24px;
+    font-weight: 700px;
+    padding-bottom: 20px;
+  }
+}

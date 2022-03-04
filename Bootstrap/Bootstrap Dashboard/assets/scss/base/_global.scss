@@ -1,0 +1,94 @@
+// Global styles goes here
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  color: $text-color;
+  font-family: $font-family;
+}
+
+
+// // Commom Styles
+// .position-relative {
+//   position: relative;
+// }
+
+// .position-absolute {
+//   position: absolute;
+// }
+
+// .overflow-auto {
+//   overflow: auto;
+// }
+
+// .overflow-hidden {
+//   overflow: hidden;
+// }
+
+// .overflow-vertical {
+//   overflow-x: hidden;
+//   overflow-y: auto;
+// }
+
+
+// // Flex Styles
+// .d-flex {
+//   display: flex;
+// }
+
+// .flex-wrap {
+//   flex-wrap: wrap;
+// }
+
+// .flex-column {
+//   flex-direction: column;
+// }
+
+// .flex-row {
+//   flex-direction: row;
+// }
+
+// .flex-grow-1 {
+//   flex-grow: 1;
+// }
+
+// .flex-shrink-0 {
+//   flex-shrink: 0;
+// }
+
+// .align-items-center {
+//   align-items: center;
+// }
+
+// .justify-content-end {
+//   justify-content: flex-end;
+// }
+// .justify-content-center {
+//   justify-content: center;
+// }
+
+// .justify-content-between {
+//   justify-content: space-between;
+// }
+
+
+// Height Loop
+// @each $percent in (25, 50, 75, 100) {
+//   .h-#{$percent} {
+//     height: 1% * $percent;
+//   }
+//   .w-#{$percent} {
+//     width: 1% * $percent;
+//   }
+// }
