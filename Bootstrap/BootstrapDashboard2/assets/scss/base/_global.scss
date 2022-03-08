@@ -1,0 +1,11 @@
+// Global styles goes here
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.overflow-vertical {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
