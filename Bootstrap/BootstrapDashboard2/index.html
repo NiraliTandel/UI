@@ -15,40 +15,40 @@
       <span class="icon-dashboard_icon icon"></span>
     </div>
     <div class="d-flex flex-column justify-content-between flex-grow-1 overflow-hidden">
-      <nav class="nav-navbar overflow-vertical">
+      <nav class="nav-navbar overflow-auto">
         <ul>
           <li class="nav-item">
-            <a href="#" class="nav-link active">
+            <a href="#" class="nav-link d-flex align-items-center active">
               <span class="icon-home_icon icon"></span>
               <span class="nav-link-name">Home</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link d-flex align-items-center">
               <span class="icon-trophy_icon icon"></span>
               <span class="nav-link-name">Projects</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link d-flex align-items-center">
               <span class="icon-bank_icon icon"></span>
               <span class="nav-link-name">Billings</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link d-flex align-items-center">
               <span class="icon-user_icon icon"></span>
               <span class="nav-link-name">Team Members</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link d-flex align-items-center">
               <span class="icon-graph_icon icon"></span>
               <span class="nav-link-name">Stats</span>
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="#" class="nav-link d-flex align-items-center">
               <span class="icon-settings_icon icon"></span>
               <span class="nav-link-name">Settings</span>
             </a>
@@ -64,8 +64,140 @@
       </div>
     </div>
   </aside>
-  <main>
-
+  <main class="content-wrapper d-flex flex-grow-1 overflow-auto">
+    <div class="d-flex flex-grow-1 flex-column">
+      <div>
+        <div class="search-box d-flex align-items-center">
+          <span class="icon-search_icon icon"></span>
+          <input type="text" id="serach" name="search" placeholder="Search for stats" class="search-input" />
+        </div>
+        <div class="d-flex justify-content-between mt-5">
+          <div>
+            <h1>Hello David</h1>
+            <span class="greeting">Welcome Back !</span>
+          </div>
+          <div class="filter-box d-flex align-items-center mt-4">
+            <input type="text" id="filter" name="filter" placeholder="Filters" class="filter filter-input" />
+            <span class="icon-filter_icon icon"></span>
+          </div>
+        </div>
+      </div>
+      <div class="card card-wrapper d-flex flex-row mt-4">
+        <div class="card-body">
+          <div class="icon-circle d-flex justify-content-center align-items-center">
+            <span class="icon-view_icon icon"></span>
+          </div>
+          <p class="card-text">Views</p>
+          <h2 class="card-number">500</h2>
+          <p class="card-text">Per Day</p>
+        </div>
+        <div class="card-body">
+          <div class="icon-circle d-flex justify-content-center align-items-center">
+            <span class="icon-compass_icon icon"></span>
+          </div>
+          <p class="card-text">Visits</p>
+          <h2 class="card-number">2000</h2>
+          <p class="card-text">Per minutes</p>
+        </div>
+        <div class="card-body">
+          <div class="icon-circle d-flex justify-content-center align-items-center">
+            <span class="icon-market_sale_icon icon"></span>
+          </div>
+          <p class="card-text">Orders</p>
+          <h2 class="card-number">5100</h2>
+          <p class="card-text">Per Day</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 g-4">
+          <div class="card sale-card">
+            <div class="card-body">
+              <h5 class="card-title">Sales</h5>
+              <p class="card-text">Total Sales Today</p>
+              <h2 class="card-number">$500</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 g-4">
+          <div class="card profit-card">
+            <div class="card-body">
+              <h5 class="card-title">Profit</h5>
+              <p class="card-text">Per day ratio</p>
+              <h2 class="card-number">$150</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 g-4">
+          <div class="card order-card">
+            <div class="card-body">
+              <h5 class="card-title">Orders</h5>
+              <p class="card-text">Total Order Today</p>
+              <h2 class="card-number">1000</h2>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 g-4 ">
+          <div class="card visit-card">
+            <div class="card-body">
+              <h5 class="card-title">Visits</h5>
+              <p class="card-text">Total Visit Today</p>
+              <h2 class="card-number">400</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sales-revenue p-5">
+      <div class="d-flex flex-column">
+        <h3>Sales Revenue</h3>
+        <div class="pt-4">
+          <div class="d-flex pb-4">
+            <div class="d-flex align-items-center justify-content-center">
+              <div class="icon-circle d-flex justify-content-center align-items-center">
+                <span class="icon-discount_offer_icon icon"></span>
+              </div>
+            </div>
+            <div>
+              <h3>230k</h3>
+              <p class="text">Sales</p>
+            </div>
+          </div>
+          <div class="d-flex pb-4">
+            <div class="d-flex align-items-center justify-content-center">
+              <div class="icon-circle d-flex justify-content-center align-items-center">
+                <span class="icon-account_icon icon"></span>
+              </div>
+            </div>
+            <div>
+              <h3>8.549k</h3>
+              <p class="text">Customers</p>
+            </div>
+          </div>
+          <div class="d-flex pb-4">
+            <div class="d-flex align-items-center justify-content-center">
+              <div class="icon-circle d-flex justify-content-center align-items-center">
+                <span class="icon-square_icon icon"></span>
+              </div>
+            </div>
+            <div>
+              <h3>1.423k</h3>
+              <p class="text">Products</p>
+            </div>
+          </div>
+          <div class="d-flex pb-4">
+            <div class="d-flex align-items-center justify-content-center">
+              <div class="icon-circle d-flex justify-content-center align-items-center">
+                <span class="icon-circle_icon icon"></span>
+              </div>
+            </div>
+            <div>
+              <h3>$9745</h3>
+              <p class="text">Revenue</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </div>
 </body>
