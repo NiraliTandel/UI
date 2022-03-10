@@ -13,10 +13,11 @@
     left: 3%;
     font-size: 24px;
     color: $black;
+    cursor: pointer;
   }
 
   .search-input {
-    font-size: 16px;
+    font-size: 14px;
     outline: none;
     border: none;
     padding-left: 40px;
@@ -27,7 +28,7 @@
   position: relative;
   height: 32px;
   width: 100px;
-  padding: 10px;
+  padding: 15px;
   border: 2px solid $border-color;
   border-radius: 10px;
 
@@ -36,11 +37,12 @@
     right: 3%;
     font-size: 24px;
     color: $black;
+    cursor: pointer;
   }
 
   .filter-input {
     width: 100%;
-    font-size: 16px;
+    font-size: 14px;
     outline: none;
     border: none;
     padding-right: 20px;

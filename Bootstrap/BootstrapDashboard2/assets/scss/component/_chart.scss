@@ -1,0 +1,65 @@
+.pie-chart {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+
+  &.sale-chart {
+    background: conic-gradient(black 55%, transparent 55% 100%);
+    .inner-chart {
+      background: $sale-card-color;
+    }
+  }
+
+  &.profit-chart {
+    background: conic-gradient(black 30%, transparent 30% 100%);
+    .inner-chart {
+      background: $profit-card-color;
+    }
+  }
+
+  &.order-chart {
+    background: conic-gradient(black 80%, transparent 80% 100%);
+    .inner-chart {
+      background: $order-card-color;
+    }
+  }
+
+  &.visit-chart {
+    background: conic-gradient(black 70%, transparent 70% 100%);
+    .inner-chart {
+      background: $visit-card-color;
+    }
+  }
+
+  .inner-chart {
+    height: 90%;
+    width: 90%;
+    border-radius: 100%;
+  }
+
+  .text {
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+  }
+}
+
+.sale-arrow-icon {
+  font-size: 32px;
+  color: $sale-card-arrow-color;
+}
+
+.profit-arrow-icon {
+  font-size: 32px;
+  color: $profit-card-arrow-color;
+}
+
+.order-arrow-icon {
+  font-size: 32px;
+  color: $order-card-arrow-color;
+}
+
+.visit-arrow-icon {
+  font-size: 32px;
+  color: $visit-card-arrow-color;
+}
