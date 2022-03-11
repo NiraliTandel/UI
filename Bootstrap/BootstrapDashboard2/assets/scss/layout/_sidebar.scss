@@ -2,6 +2,8 @@
 .sidebar {
   width: 300px;
   border-right: 2px solid $border-color;
+  transition: 0.6s all;
+  white-space: nowrap;
 
   .icon {
     margin-left: 40px;
@@ -76,5 +78,30 @@
       font-size: 24px;
       font-weight: 500;
     }
+  }
+}
+
+.menu-icon {
+  font-size: 24px;
+  color: $black;
+  left: 340px;
+  top: 42px;
+  cursor: pointer;
+}
+
+#menu {
+  display: none;
+}
+
+#menu:checked {
+
+  & ~ aside {
+    width: 0;
+    transform: translateX(-90px);
+    transition: 0.6s all;
+  }
+
+  ~ .menu-icon {
+    left: 40px;
   }
 }

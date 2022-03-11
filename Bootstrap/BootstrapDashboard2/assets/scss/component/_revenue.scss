@@ -1,9 +1,15 @@
 .sales-revenue {
-  width: 300px;
+  width: 350px;
   background-color: $black;
   border-radius: 20px;
   color: white;
   margin-left: 40px;
+
+  @include media-breakpoint-down(md) { 
+    width:100%;
+    margin-top: 20px;
+    margin-left: 0;
+   }
 
   .icon-circle {
     height: 40px;

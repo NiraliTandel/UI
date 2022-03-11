@@ -10,7 +10,9 @@
   <title>Dashboard</title>
 </head>
 <div class="d-flex h-100 overflow-hidden">
-  <aside class="sidebar d-flex flex-column h-100 overflow-hidden">
+  <input type="checkbox" id="menu" />
+  <label for="menu" class="menu-icon position-absolute"><span class="icon-hamburger_menu_icon  pe-5"></span></label>
+  <aside class="sidebar d-flex flex-column h-100 overflow-hidden flex-shrink-0">
     <div class="logo d-flex align-items-center">
       <span class="icon-dashboard_icon icon"></span>
     </div>
@@ -60,56 +62,65 @@
           <img class="img" src="assets/images/female.png" alt="user-img" />
           <div class="user-status"></div>
         </div>
-        <span class="user-name">David Milan</span>
+        <span class="user-name">Nirali Tandel</span>
       </div>
     </div>
   </aside>
-  <main class="content-wrapper d-flex flex-grow-1 overflow-auto">
+  <main class="content-wrapper d-flex flex-grow-1 overflow-auto flex-column flex-md-row">
     <div class="d-flex flex-grow-1 flex-column">
       <div>
         <div class="search-box d-flex align-items-center">
-          <span class="icon-search_icon icon"></span>
-          <input type="text" id="serach" name="search" placeholder="Search for stats" class="search-input" />
+          <label for="search"><span class="icon-search_icon icon"></span></label>
+          <input type="text" id="search" name="search" placeholder="Search for stats" class="search-input" />
         </div>
         <div class="d-flex justify-content-between mt-5">
           <div>
-            <h1>Hello David</h1>
+            <h1>Hello Nirali</h1>
             <span class="greeting">Welcome Back !</span>
           </div>
           <div class="filter-box d-flex align-items-center mt-4">
             <input type="text" id="filter" name="filter" placeholder="Filters" class="filter filter-input" />
-            <span class="icon-filter_icon icon"></span>
+            <label for="filter"><span class="icon-filter_icon icon"></span></label>
           </div>
-        </div>
-      </div>
-      <div class="card card-wrapper d-flex flex-row mt-4">
-        <div class="card-body">
-          <div class="icon-circle d-flex justify-content-center align-items-center">
-            <span class="icon-view_icon icon"></span>
-          </div>
-          <p class="card-text">Views</p>
-          <h2 class="card-number">500</h2>
-          <p class="card-text">Per Day</p>
-        </div>
-        <div class="card-body">
-          <div class="icon-circle d-flex justify-content-center align-items-center">
-            <span class="icon-compass_icon icon"></span>
-          </div>
-          <p class="card-text">Visits</p>
-          <h2 class="card-number">2000</h2>
-          <p class="card-text">Per minutes</p>
-        </div>
-        <div class="card-body">
-          <div class="icon-circle d-flex justify-content-center align-items-center">
-            <span class="icon-market_sale_icon icon"></span>
-          </div>
-          <p class="card-text">Orders</p>
-          <h2 class="card-number">5100</h2>
-          <p class="card-text">Per Day</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-6 g-4">
+        <div class="col-12">
+          <div class="card card-wrapper mt-4">
+            <div>
+              <div class="row">
+                <div class="col-sm-12 col-lg-4 card-body">
+                  <div class="icon-circle d-flex justify-content-center align-items-center">
+                    <span class="icon-view_icon icon"></span>
+                  </div>
+                  <p class="card-text">Views</p>
+                  <h2 class="card-number">500</h2>
+                  <p class="card-text">Per Day</p>
+                </div>
+                <div class="col-sm-12 col-lg-4 card-body">
+                  <div class="icon-circle d-flex justify-content-center align-items-center">
+                    <span class="icon-compass_icon icon"></span>
+                  </div>
+                  <p class="card-text">Visits</p>
+                  <h2 class="card-number">2000</h2>
+                  <p class="card-text">Per minutes</p>
+                </div>
+                <div class="col-sm-12 col-lg-4 card-body">
+                  <div class="icon-circle d-flex justify-content-center align-items-center">
+                    <span class="icon-market_sale_icon icon"></span>
+                  </div>
+                  <p class="card-text">Orders</p>
+                  <h2 class="card-number">5100</h2>
+                  <p class="card-text">Per Day</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-lg-6 g-4">
           <div class="card sale-card">
             <div class="d-flex justify-content-end">
               <span class="icon-arrow_right_up_icon sale-arrow-icon"></span>
@@ -128,7 +139,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 g-4">
+        <div class="col-sm-12 col-lg-6 g-4">
           <div class="card profit-card">
             <div class="d-flex justify-content-end">
               <span class="icon-arrow_right_up_icon profit-arrow-icon"></span>
@@ -147,7 +158,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 g-4">
+        <div class="col-sm-12 col-lg-6 g-4">
           <div class="card order-card">
             <div class="d-flex justify-content-end">
               <span class="icon-arrow_right_up_icon order-arrow-icon"></span>
@@ -166,7 +177,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 g-4 ">
+        <div class="col-sm-12 col-lg-6 g-4 ">
           <div class="card visit-card">
             <div class="d-flex justify-content-end">
               <span class="icon-arrow_right_up_icon visit-arrow-icon"></span>
