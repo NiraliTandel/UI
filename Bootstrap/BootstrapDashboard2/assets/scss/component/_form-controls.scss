@@ -2,11 +2,11 @@
 .search-box {
   position: relative;
   height: 50px;
-  // width: 400px;
+  width: 400px;
   padding: 10px;
   border: 2px solid $border-color;
   border-radius: $border-radius-medium;
-  
+
   .icon {
     position: absolute;
     top: 25%;
@@ -27,15 +27,15 @@
 .filter-box {
   position: relative;
   height: 40px;
-  width: 100px;
+  width: 140px;
   padding: 15px;
   border: 2px solid $border-color;
   border-radius: $border-radius-medium;
 
   .icon {
     position: absolute;
-    right: 4%;
-    top: 16%;
+    right: 10%;
+    top: 18%;
     font-size: $font-size-medium;
     color: $black;
     cursor: pointer;

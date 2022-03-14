@@ -1,6 +1,6 @@
 // Sidebar styles goes here
 .sidebar {
-  flex:0 0 $sidebar-width;
+  flex: 0 0 $sidebar-width;
   width: $sidebar-width;
   border-right: 2px solid $border-color;
   transition: $transition-base;
@@ -14,12 +14,6 @@
     left: -300px;
     width: 300px;
     background-color: $white;
-    flex-shrink: 0;
-  }
-
-  @include media-breakpoint-down(md) {
-    flex: 0 0 100%;
-    width: 100%;
   }
 
   .icon {
@@ -99,7 +93,7 @@
 }
 
 .arrow-icon {
-  position: absolute ;
+  position: absolute;
   font-size: $font-size-medium;
   top: 50%;
   left: $sidebar-width;
@@ -107,8 +101,8 @@
   transition: $transition-base;
   cursor: pointer;
 
-  @include media-breakpoint-down(xl){
-    left:0;
+  @include media-breakpoint-down(xl) {
+    left: 0;
   }
 }
 
@@ -120,26 +114,34 @@
   & ~ .sidebar {
     transform: translateX(-$sidebar-width);
     width: 0;
-    flex:0 0 0;
-
+    flex: 0 0 0;
 
     @include media-breakpoint-down(xl) {
       left: $sidebar-width;
-      flex :0 0 $sidebar-width;
+      flex: 0 0 $sidebar-width;
       width: $sidebar-width;
 
-      ~ .content-wrapper{
+      ~ .content-wrapper {
         filter: blur(8px);
         pointer-events: none;
       }
     }
+
+    @include media-breakpoint-down(sm) {
+      flex: 0 0 100%;
+      width: 100%;
+    }
   }
-  
+
   & ~ .arrow-icon {
-    left:0;
+    left: 0;
     transform: rotate(180deg);
-    @include media-breakpoint-down(xl){
-      left:$sidebar-width;
+    @include media-breakpoint-down(xl) {
+      left: $sidebar-width;
+    }
+
+    @include media-breakpoint-down(sm) {
+      left: 0;
     }
   }
 }
