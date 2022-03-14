@@ -1,7 +1,7 @@
 .pie-chart {
   width: 100px;
   height: 100px;
-  border-radius: 100%;
+  border-radius: $rounded-circle-full;
 
   &.sale-chart {
     background: conic-gradient(black 55%, transparent 55% 100%);
@@ -34,32 +34,32 @@
   .inner-chart {
     height: 90%;
     width: 90%;
-    border-radius: 100%;
+    border-radius: $rounded-circle-full;
   }
 
   .text {
     color: black;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
   }
 }
 
 .sale-arrow-icon {
-  font-size: 32px;
+  font-size: $font-size-large;
   color: $sale-card-arrow-color;
 }
 
 .profit-arrow-icon {
-  font-size: 32px;
+  font-size: $font-size-large;
   color: $profit-card-arrow-color;
 }
 
 .order-arrow-icon {
-  font-size: 32px;
+  font-size: $font-size-large;
   color: $order-card-arrow-color;
 }
 
 .visit-arrow-icon {
-  font-size: 32px;
+  font-size: $font-size-large;
   color: $visit-card-arrow-color;
 }

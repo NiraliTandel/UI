@@ -1,7 +1,7 @@
 .sales-revenue {
-  width: 350px;
+  width: $sales-revenue-width;
   background-color: $black;
-  border-radius: 20px;
+  border-radius: $border-radius-large;
   color: white;
   margin-left: 40px;
 
@@ -14,13 +14,13 @@
   .icon-circle {
     height: 40px;
     width: 40px;
-    border-radius: 50%;
+    border-radius: $rounded-circle;
     background-color: $white;
     margin-right: 40px;
   }
 
   .icon {
-    font-size: 24px;
+    font-size: $font-size-medium;
     color: $black;
   }
 

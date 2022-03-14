@@ -1,2 +1,29 @@
 // All the SCSS Variables goes here
 $font-family: "Poppins", sans-serif;
+
+// Fonts
+$font-size-base: 1rem;
+$font-size-small: 0.875rem;
+$font-size-medium: 1.5rem;
+$font-size-large: 2rem;
+$font-weight-normal: 400;
+$font-weight-bold: 500;
+$font-weight-bolder: 700;
+
+// Border-radius   
+$border-radius-small: 8px;  
+$border-radius-medium: 10px;
+$border-radius-large: 20px;        
+$rounded-circle: 50%;
+$rounded-circle-full: 100%;
+
+// Transition Timimg
+$transition-base: all .4s ease-in-out;
+
+// Sidebar
+$sidebar-width: 300px;
+
+// Sales Revenue
+$sales-revenue-width: 350px;
+
+

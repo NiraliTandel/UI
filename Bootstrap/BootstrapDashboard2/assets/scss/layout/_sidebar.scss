@@ -1,18 +1,35 @@
 // Sidebar styles goes here
 .sidebar {
-  width: 300px;
+  flex:0 0 $sidebar-width;
+  width: $sidebar-width;
   border-right: 2px solid $border-color;
-  transition: 0.6s all;
+  transition: $transition-base;
   white-space: nowrap;
+
+  @include media-breakpoint-down(xl) {
+    position: absolute;
+    z-index: 99;
+    flex: 0 0 300px;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    background-color: $white;
+    flex-shrink: 0;
+  }
+
+  @include media-breakpoint-down(md) {
+    flex: 0 0 100%;
+    width: 100%;
+  }
 
   .icon {
     margin-left: 40px;
     margin-right: 20px;
-    font-size: 24px;
+    font-size: $font-size-medium;
   }
 
   .logo {
-    font-size: 24px;
+    font-size: $font-size-medium;
     height: 125px;
     margin-left: 16px;
   }
@@ -25,22 +42,22 @@
     &-link {
       color: $black;
       padding: 10px;
-      font-size: 16px;
-      font-weight: 500;
+      font-size: $font-size-base;
+      font-weight: $font-weight-bold;
       border-left: 4px solid $white;
-      transition: 0.2s all ease-in-out;
+      transition: $transition-base;
       &.active {
         border-left: 4px solid $black;
-        font-weight: 700;
+        font-weight: $font-weight-bolder;
         .icon {
-          font-weight: 700;
+          font-weight: $font-weight-bolder;
         }
       }
       &:hover {
         border-left: 4px solid $black;
-        font-weight: 700;
+        font-weight: $font-weight-bolder;
         .icon {
-          font-weight: 700;
+          font-weight: $font-weight-bolder;
         }
       }
     }
@@ -55,11 +72,11 @@
       padding: 5px;
       margin-bottom: 10px;
       border: 2px solid $border-color;
-      border-radius: 8px;
+      border-radius: $border-radius-small;
       .img {
         height: 40px;
         width: 40px;
-        border-radius: 8px;
+        border-radius: $border-radius-small;
       }
     }
 
@@ -71,37 +88,58 @@
       width: 8px;
       background-color: green;
       border: 1px solid $border-color;
-      border-radius: 50%;
+      border-radius: $rounded-circle;
     }
 
     &-name {
-      font-size: 24px;
-      font-weight: 500;
+      font-size: $font-size-medium;
+      font-weight: $font-weight-bold;
     }
   }
 }
 
-.menu-icon {
-  font-size: 24px;
-  color: $black;
-  left: 340px;
-  top: 42px;
+.arrow-icon {
+  position: absolute ;
+  font-size: $font-size-medium;
+  top: 50%;
+  left: $sidebar-width;
+  z-index: 999;
+  transition: $transition-base;
   cursor: pointer;
+
+  @include media-breakpoint-down(xl){
+    left:0;
+  }
 }
 
-#menu {
+#sidebar-checkbox {
   display: none;
 }
 
-#menu:checked {
-
-  & ~ aside {
+#sidebar-checkbox:checked {
+  & ~ .sidebar {
+    transform: translateX(-$sidebar-width);
     width: 0;
-    transform: translateX(-90px);
-    transition: 0.6s all;
-  }
+    flex:0 0 0;
 
-  ~ .menu-icon {
-    left: 40px;
+
+    @include media-breakpoint-down(xl) {
+      left: $sidebar-width;
+      flex :0 0 $sidebar-width;
+      width: $sidebar-width;
+
+      ~ .content-wrapper{
+        filter: blur(8px);
+        pointer-events: none;
+      }
+    }
+  }
+  
+  & ~ .arrow-icon {
+    left:0;
+    transform: rotate(180deg);
+    @include media-breakpoint-down(xl){
+      left:$sidebar-width;
+    }
   }
 }

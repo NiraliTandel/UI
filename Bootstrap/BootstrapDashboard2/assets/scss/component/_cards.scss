@@ -1,7 +1,7 @@
 // Card styles goes here
 .card {
   border: none;
-  border-radius: 20px;
+  border-radius: $border-radius-large;
   padding: 20px;
 
   &.card-wrapper {
@@ -10,13 +10,13 @@
     .icon-circle {
       height: 40px;
       width: 40px;
-      border-radius: 50%;
-      background-color: #e4e0d5;
+      border-radius: $rounded-circle;
+      background-color: $icon-circle-bg;
       margin-bottom: 20px;
     }
 
     .icon {
-      font-size: 16px;
+      font-size: $font-size-base;
       color: $black;
     }
   }
